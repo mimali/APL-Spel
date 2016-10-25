@@ -6,5 +6,5 @@ Working with:
 *JavaScript
 
 Frameworks:
-*Zepto
+*jQuery
 *Bootstrap (maybe)
