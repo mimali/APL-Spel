@@ -146,12 +146,13 @@ hr.small {
   background-size: cover;
   -o-background-size: cover;
   margin-bottom: 50px;
+  opacity: 0.5;
 }
 .intro-header .site-heading,
 .intro-header .post-heading,
 .intro-header .page-heading {
   padding: 100px 0 50px;
-  color: white;
+  color: white ;
 }
 @media only screen and (min-width: 768px) {
   .intro-header .site-heading,
@@ -397,4 +398,8 @@ img::-moz-selection {
 }
 body {
   -webkit-tap-highlight-color: #0085A1;
+}
+
+.quiz-image{
+  margin: auto auto auto 100px;
 }
