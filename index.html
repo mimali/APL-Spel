@@ -38,7 +38,7 @@
 
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
-    <header class="intro-header" style="background-image: url('img/home-bg.jpg')">
+    <!-- <header class="intro-header" style="background-image: url('img/home-bg.jpg')">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -50,14 +50,67 @@
                 </div>
             </div>
         </div>
-    </header>
+    </header>-->
+
+    <div class="header-container">
+      <div class="video-container">
+        <video preload="true" autoplay="autoplay" loop="loop" muted
+        poster="../img/home-bg.jpg">
+          <source src="video/home-video.mp4" type="video/mp4">
+            <source src="video/home-video.webm" type="video/webm">
+              <source src="video/home-video.ogv" type="video/ogg">
+        </video>
+
+
+      </div> <!-- video-container-->
+      <h3> FÅNGA FRISK FISK </h3>
+    </div> <!-- header-container-->
+
 
     <!-- Main Content -->
     <div class="container">
 
-                <div id="game">
-                  <img src="img/quiz.png" alt="quiz" class="quiz-image">
-                </div>
+      <div id="quizContainer">
+        <div id="startQuiz" class="steps">
+          <button class="quizButton">Start</button>
+        </div> <!-- startQuiz -->
+
+        <div id="question1" class="steps">
+          <div id="option1.1" class="unselectedOption">Alternativ</div>
+          <div id="option1.2" class="unselectedOption">Alternativ</div>
+          <div id="option1.3" class="unselectedOption">Alternativ</div>
+          <div id="option1.4" class="unselectedOption">Alternativ</div>
+          <button class="quizButton">Svara</button>
+        </div> <!-- question1 -->
+
+        <div id="question2" class="steps">
+          <div id="option2.1" class="unselectedOption">Alternativ</div>
+          <div id="option2.2" class="unselectedOption">Alternativ</div>
+          <div id="option2.3" class="unselectedOption">Alternativ</div>
+          <div id="option2.4" class="unselectedOption">Alternativ</div>
+          <button class="quizButton">Svara</button>
+        </div> <!-- question2 -->
+
+        <div id="question3" class="steps">
+          <div id="option3.1" class="unselectedOption">Alternativ</div>
+          <div id="option3.2" class="unselectedOption">Alternativ</div>
+          <div id="option3.3" class="unselectedOption">Alternativ</div>
+          <div id="option3.4" class="unselectedOption">Alternativ</div>
+          <button class="quizButton">Svara</button>
+        </div> <!-- question3 -->
+
+        <div id="question4" class="steps">
+          <div id="option4.1" class="unselectedOption">Alternativ</div>
+          <div id="option4.2" class="unselectedOption">Alternativ</div>
+          <div id="option4.3" class="unselectedOption">Alternativ</div>
+          <div id="option4.4" class="unselectedOption">Alternativ</div>
+          <button class="quizButton">Svara</button>
+        </div> <!-- question4 -->
+
+        <div id="endQuiz" class="steps">
+          <button class="quizButton">Avsluta</button>
+        </div> <!-- endQuiz -->
+      </div> <!-- quizContainer -->
           <!-- Pager -->
           <hr>
 
