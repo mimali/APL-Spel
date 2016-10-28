@@ -376,6 +376,10 @@ img::-moz-selection{
   margin: 0 auto;
 }
 
+.steps {
+  display: none;
+}
+
 .quizButton {
     background-color: white;
     color: black;
