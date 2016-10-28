@@ -45,9 +45,9 @@
             // Loop through all steps in quiz, show only current
             for (var i = 0; i < stepsInQuiz.length; i++) {
                 if (i != currentStep) {
-                    $(stepsInQuiz[i]).hide();
+                    $(stepsInQuiz[i]).hide("slide", {direction : "left"});
                 } else {
-                    $(stepsInQuiz[i]).show(); 
+                    $(stepsInQuiz[i]).show("slide", {direction : "right"}); 
                 };
             };
         };
