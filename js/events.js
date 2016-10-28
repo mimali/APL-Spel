@@ -6,8 +6,12 @@ $(document).ready(function () {
 	});
 
 	$(".unselectedOption").click(function(){
-		var selectOrUnseclect = $(this).switchClass("unselectedOption", "selectedOption");
-		markClicked(selectOrUnseclect);
+		$(this).switchClass("unselectedOption", "selectedOption");
+		markClicked();
 	});
+
+	$(".selectedOption").click(function(){
+        $(this).switchClass("selectedOption", "unselectedOption");
+    });
 	
 });
