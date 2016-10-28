@@ -395,6 +395,7 @@ img::-moz-selection{
 
 .steps {
   display: none;
+  position: absolute;
 }
 
 .quizButton {
@@ -422,6 +423,11 @@ img::-moz-selection{
   border-right: none;
   position: relative;
   margin-bottom: 20px;
+}
+
+.para {
+  clear: both;
+  margin-top: 200px;
 }
 
 .video-container{
