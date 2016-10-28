@@ -10,6 +10,8 @@
         var allUserAnswers = [];
         //All correct answers
         var correctAnswers = ["option1.1", "option2.1", "option3.1", "option4.1"];
+        // And then in booleans
+        var boolCorrectAnswers = [];
 
         
         getValidStep();
@@ -18,6 +20,7 @@
         $(".quizButton").click(function(){
             // Add +1 step in process
             currentStep++
+            // If quiz is over -> compare user answers with correct answers
             if (currentStep > 4) {
                 compareAnswers()
             };
@@ -44,7 +47,7 @@
 
         $(".selectedOption").click(function(){
             $(this).switchClass("selectedOption", "unselectedOption");
-        })
+        });
         
         function getValidStep(){
             console.log("currentStep: " + currentStep);
@@ -58,10 +61,17 @@
             };
         };
 
+        // Compare user answers with correct answers
+        // Creates boolean list of answer results
         function compareAnswers(){
             for (var i = 0; i < allUserAnswers.length; i++) {
-                if (true) {};
+                if (allUserAnswers[i] == correctAnswers[i]) {
+                    boolCorrectAnswers.push(true);
+                } else {
+                    boolCorrectAnswers.push(false);
+                };
             };
-        }
+            console.log(boolCorrectAnswers) //TESTPRINT
+        };
         
     });
