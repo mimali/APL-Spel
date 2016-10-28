@@ -371,9 +371,12 @@ img::-moz-selection{
     color:#fff;background:0 0
   }
 
+
+
 #quizContainer{
-  width: 100px;
-  margin: 0 auto;
+  width: 100%;
+  margin: 0px;
+  background-color: #999;
 }
 
 .steps {
@@ -381,9 +384,11 @@ img::-moz-selection{
 }
 
 .quizButton {
-    background-color: white;
-    color: black;
-    border: 2px solid #78b41e;
+  clear: both;
+  color: black;
+  border: 2px solid #78b41e;
+  padding: 2px 50px;
+  background-color: #FFF;
 }
 
 .quizButton:hover {
