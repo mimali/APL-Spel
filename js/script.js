@@ -56,8 +56,8 @@
             for (var i = 0; i < stepsInQuiz.length; i++) {
                 // Check what step the quiz is on, show that step and hide previous
                 if (i == currentStep && currentStep > 0) {
-                    $(stepsInQuiz[i-1]).hide("slide", {direction : "left"});
-                    $(stepsInQuiz[i]).show("slide", {direction : "right"});
+                    $(stepsInQuiz[i-1]).hide("slide", {direction : "left"}, 3000);
+                    $(stepsInQuiz[i]).show("slide", {direction : "right"}, 3000);
                 }
                 // Show without animation on Start stage
                 else if (currentStep == 0) {
