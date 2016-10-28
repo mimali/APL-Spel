@@ -39,6 +39,8 @@
             console.log(allUserAnswers); // FOR TESTING
             //Change all other options to unmarked class 
             var siblings = $(this).siblings();
+            
+            // *** ONLY WORKS WHEN OPTIONS ARE INDEX 0-4. CHANGE IF MORE CONTENT IS ADDED!!!!
             var otherOptions = siblings.slice(0,4);
 
             for (var i = 0; i < otherOptions.length; i++) {
