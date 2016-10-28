@@ -3,6 +3,7 @@ $(document).ready(function () {
 
 	$(".quizButton").click(function(){
 		addStep();
+		getValidStep();
 	});
 
 	$(".unselectedOption").click(function(){
