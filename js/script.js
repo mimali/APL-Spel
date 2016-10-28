@@ -39,7 +39,7 @@
             console.log(allUserAnswers); // FOR TESTING
             //Change all other options to unmarked class 
             var siblings = $(this).siblings();
-            
+
             // *** ONLY WORKS WHEN OPTIONS ARE INDEX 0-4. CHANGE IF MORE CONTENT IS ADDED!!!!
             var otherOptions = siblings.slice(0,4);
 
@@ -56,16 +56,25 @@
             console.log("currentStep: " + currentStep);
             // Loop through all steps in quiz...
             for (var i = 0; i < stepsInQuiz.length; i++) {
-                // Check what step the quiz is on, show that step and hide previous
-                if (i == currentStep && currentStep > 0) {
-                    $(stepsInQuiz[i-1]).hide("slide", {direction : "left"}, 3000);
-                    $(stepsInQuiz[i]).show("slide", {direction : "right"}, 3000);
-                }
                 // Show without animation on Start stage
-                else if (currentStep == 0) {
+                if (currentStep == 0) {
                     $(stepsInQuiz[0]).show();
-                }; 
-                     
+                }
+                // Check what step the quiz is on, show that step and hide previous
+                else if (i == currentStep && currentStep > 0) {
+                    // Hide options
+                    $( ".unselectedOption, .quizButton" ).hide();
+
+                    // Slide in new step, slide out old one
+                    $(stepsInQuiz[i-1]).hide("slide", {direction : "left"}, 2000);
+                    $(stepsInQuiz[i]).show("slide", {direction : "right"}, 2000);
+                    
+                    // Show options
+                    setTimeout(function(){
+                        $(".unselectedOption, .quizButton").show();
+                    }, 2300);                    
+                };
+    
             };
         };
 
