@@ -371,7 +371,21 @@ img::-moz-selection{
     color:#fff;background:0 0
   }
 
+#question1 {
+  background-color: #000;
+}
 
+#question2 {
+  background-color: #FAA;
+}
+
+#question3 {
+  background-color: #555;
+}
+
+#question4 {
+  background-color: #FFF333;
+}
 
 #quizContainer{
   width: 100%;
