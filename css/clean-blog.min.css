@@ -396,7 +396,7 @@ img::-moz-selection{
 .steps {
   display: none;
   width: 85%;
-  height: 180px;
+  height: 400px;
   position: absolute;
   margin: 0px;
 }
@@ -420,12 +420,24 @@ img::-moz-selection{
   background-color: #FFF;
   width: 200px;
   margin: auto;
-  margin-bottom: 20px;
+  position: absolute;
+  bottom: 10px;
+  left: 40%;
+}
+
+#startButton {
+  position: absolute;
+  margin-top: 20px;
+  top: 10px;
+  left: 40%;
+  height: 50px;
 }
 
 .quizButton:hover {
     background-color: #78b41e;
     color: white;
+    position: absolute;
+
 }
 
 .selectedOption{
@@ -448,7 +460,7 @@ img::-moz-selection{
 
 .para {
   clear: both;
-  margin-top: 200px;
+  margin-top: 500px;
 }
 
 .video-container{
@@ -458,12 +470,25 @@ img::-moz-selection{
   height: 100%;
   width: 100%;
   overflow:hidden;
+}
 
+.question {
+  padding: 0px 10px;
 
 }
 
+.correctFeedback {
+  height: 500px;
+  width: 70%;
+}
+
+.incorrectFeedback {
+  height: 500px;
+  width: 70%;
+}
+
 video {
-  position: absolut;
+  position: absolute;
   z-index: -1;
   width:100%;
   opacity: 0.99;
