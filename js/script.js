@@ -40,12 +40,17 @@
             //Change all other options to unmarked class 
             var siblings = $(this).siblings();
 
-            // *** ONLY WORKS WHEN OPTIONS ARE INDEX 0-4. CHANGE IF MORE CONTENT IS ADDED!!!!
+            // *** ONLY WORKS WHEN OPTIONS ARE INDEX 0-4. CHANGE IF MORE CONTENT IS ADDED!!!! ***
             var otherOptions = siblings.slice(0,4);
 
+            // Loop through all items in quiz step to unmark unwanted options
             for (var i = 0; i < otherOptions.length; i++) {
-                $(otherOptions[i]).switchClass("selectedOption", "unselectedOption");
-            };
+                // Check which elemenets are options and apply unselect class only to them
+                var className = $(otherOptions[i]).attr('class');
+                if (className == "selectedOption") {
+                    $(otherOptions[i]).switchClass("selectedOption", "unselectedOption");
+                };
+            };  
         });
 
         $(".selectedOption").click(function(){
