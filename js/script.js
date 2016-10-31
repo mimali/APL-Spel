@@ -13,7 +13,8 @@
         // And then in booleans
         var boolCorrectAnswers = [];
 
-        
+        getFeedback(0, "option2.1")
+        // Show Start step
         getValidStep();
 
         // When clicking button...
