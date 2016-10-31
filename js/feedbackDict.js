@@ -5,7 +5,7 @@
 //		}
 //	]
 
-function getFeedback(currentStep, chosenOption) {
+function getFeedback(currentStep, chosenAnswerString) {
 
 	var feedbackArray = [
 		// Info about question here
@@ -40,6 +40,7 @@ function getFeedback(currentStep, chosenOption) {
 	var activeQuestion = feedbackArray[currentStep];
 
 	// Return array with [0] headline, [1] Text, [2] Imgsource 
-	return activeQuestion[chosenOption];
+	console.log(activeQuestion[chosenAnswerString]);
+	return activeQuestion[chosenAnswerString];
 
 };
