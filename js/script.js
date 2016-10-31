@@ -38,14 +38,11 @@
             allUserAnswers[currentStep - 1] = chosenAnswer;
             console.log(allUserAnswers); // FOR TESTING
             //Change all other options to unmarked class 
-            var siblings = $(this).siblings();
-
-            // *** ONLY WORKS WHEN OPTIONS ARE INDEX 0-4. CHANGE IF MORE CONTENT IS ADDED!!!! ***
-            var otherOptions = siblings.slice(0,4);
+            var otherOptions = $(this).siblings();
 
             // Loop through all items in quiz step to unmark unwanted options
             for (var i = 0; i < otherOptions.length; i++) {
-                // Check which elemenets are options and apply unselect class only to them
+                // Check which elements are options and apply unselect class only to them
                 var className = $(otherOptions[i]).attr('class');
                 if (className == "selectedOption") {
                     $(otherOptions[i]).switchClass("selectedOption", "unselectedOption");
@@ -68,7 +65,7 @@
                 // Check what step the quiz is on, show that step and hide previous
                 else if (i == currentStep && currentStep > 0) {
                     // Hide options
-                    $( ".unselectedOption, .quizButton" ).hide();
+                    $( ".unselectedOption, .quizButton, .question" ).hide();
 
                     // Slide in new step, slide out old one
                     $(stepsInQuiz[i-1]).hide("slide", {direction : "left"}, 2000);
@@ -76,7 +73,7 @@
                     
                     // Show options
                     setTimeout(function(){
-                        $(".unselectedOption, .quizButton").show();
+                        $(".unselectedOption, .quizButton, .question").show("fade", 300);
                     }, 2300);
                 };
     
