@@ -13,6 +13,7 @@
         // And then in booleans
         var boolCorrectAnswers = [];
 
+
         
         getValidStep();
 
