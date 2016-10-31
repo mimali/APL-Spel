@@ -372,19 +372,19 @@ img::-moz-selection{
   }
 
 #question1 {
-  background-color: #000;
+  background-image: url("../img/firstBackground.jpg");
 }
 
 #question2 {
-  background-color: #FAA;
+  background-image: url("../img/background2.jpg");
 }
 
 #question3 {
-  background-color: #555;
+  background-image: url("../img/background3.jpg");
 }
 
 #question4 {
-  background-color: #FFF333;
+  background-image: url("../img/background4.jpg");
 }
 
 #quizContainer{
@@ -469,7 +469,7 @@ img::-moz-selection{
   left:0%;
   height: 100%;
   width: 100%;
-  overflow:hidden;
+  overflow: hidden;
 }
 
 .question {
@@ -480,11 +480,13 @@ img::-moz-selection{
 .correctFeedback {
   height: 500px;
   width: 70%;
+  display: none;
 }
 
 .incorrectFeedback {
   height: 500px;
   width: 70%;
+  display: none;
 }
 
 video {
