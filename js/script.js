@@ -72,7 +72,7 @@
                     // Show options
                     setTimeout(function(){
                         $(".unselectedOption, .quizButton").show();
-                    }, 2300);                    
+                    }, 2300);
                 };
     
             };
