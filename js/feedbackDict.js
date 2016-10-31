@@ -4,6 +4,7 @@
 //			key : list of feedback info [ rubrik[0], text[1], imgsource[2] ]
 //		}
 //	]
+
 function getFeedback(currentStep, chosenOption) {
 
 	var feedbackArray = [
@@ -38,6 +39,7 @@ function getFeedback(currentStep, chosenOption) {
 
 	var activeQuestion = feedbackArray[currentStep];
 
+	// Return array with [0] headline, [1] Text, [2] Imgsource 
 	return activeQuestion[chosenOption];
 
 };
