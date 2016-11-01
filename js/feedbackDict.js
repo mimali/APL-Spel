@@ -37,10 +37,10 @@ function getFeedback(currentStep, chosenAnswerString) {
 
 	]; 
 
+	// Get correct question step
 	var activeQuestion = feedbackArray[currentStep];
 
 	// Return array with [0] headline, [1] Text, [2] Imgsource 
-	console.log(activeQuestion[chosenAnswerString]);
 	return activeQuestion[chosenAnswerString];
 
 };
