@@ -371,6 +371,15 @@ img::-moz-selection{
     color:#fff;background:0 0
   }
 
+.avatar {
+  position: absolute;
+  left: 200px;
+  bottom: 100px;
+  z-index: 1;
+  height: 100px;
+  width: 100px;
+}
+
 #question1 {
   background-image: url("../img/bgtesthigh2.png");
 }
@@ -387,21 +396,37 @@ img::-moz-selection{
   background-image: url("../img/bgtesthigh2.png");
 }
 .container {
-  width: 1000px;
+  height: 550px;
+  border: 5px solid black;
+  padding: 0px;
 }
+
 #quizContainer{
-  width: 100%;
+  width: 90%;
+  height: 550px;
   margin: 0px;
   background-color: #000;
+}
+
+#startQuiz {
+  background-image: url("../img/bgtesthigh2.png");
+}
+
+.questionBox {
+  margin: auto;
+  width: 50%;
+  height: 400px;
+  border: 5px solid #FFF;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.3) 
 }
 
 .steps {
   display: none;
   width: 100%;
-  height: 400px;
+  height: 550px;
   position: absolute;
   margin: 0px;
-  border: 5px solid #FFF;
 }
 .alternatives {
   width: 100%;
@@ -413,7 +438,15 @@ img::-moz-selection{
   height: 100px;
   float: left;
   border: 5px solid #FFF;
-  margin: 0 7%;
+  margin: 0 4%;
+}
+
+.selectedOption{
+  border: 5px solid;
+  width: 100px;
+  height: 100px;
+  float: left;
+  margin: 0 4%;
 }
 
 .quizButton {
@@ -424,8 +457,8 @@ img::-moz-selection{
   width: 200px;
   margin: auto;
   position: absolute;
-  bottom: 10px;
-  left: 40%;
+  bottom: 170px;
+  left: 43%;
 }
 
 #startButton {
@@ -443,13 +476,7 @@ img::-moz-selection{
 
 }
 
-.selectedOption{
-  border: 5px solid;
-  width: 100px;
-  height: 100px;
-  float: left;
-  margin: 0 7%;
-}
+
 
 .header-container {
   width: 100%;

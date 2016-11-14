@@ -66,15 +66,20 @@
                 // Check what step the quiz is on, show that step and hide previous
                 else if (i == currentStep && currentStep > 0) {
                     // Hide options
-                    $( ".unselectedOption, .quizButton, .question" ).hide();
+                    $( ".unselectedOption, .quizButton, .question, .questionBox" ).hide();
 
+                    // changes the avatar to a moving gif
+                    $(".avatar").attr("src", "img/TestAvatar.gif")
                     // Slide in new step, slide out old one
                     $(stepsInQuiz[i-1]).hide("slide", {direction : "left"}, 2000);
                     $(stepsInQuiz[i]).show("slide", {direction : "right"}, 2000);
                     
+                    setTimeout(function(){
+                        $(".avatar").attr("src", "img/TestAvatarStill.gif")
+                    },2000);
                     // Show options
                     setTimeout(function(){
-                        $(".unselectedOption, .quizButton, .question").show("fade", 300);
+                        $(".unselectedOption, .quizButton, .question, .questionBox").show("fade", 300);
                     }, 2300);
                 };
     
