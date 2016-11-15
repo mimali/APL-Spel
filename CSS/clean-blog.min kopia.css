@@ -380,57 +380,80 @@ img::-moz-selection{
   width: 100px;
 }
 
-#houseparty {
+/*#houseparty {
   position: absolute;
   left: 150px;
   bottom: 100px;
   z-index: 0;
   height: 400px;
   width: 400px;
-}
+}*/
 
 #question1 {
-  background-image: url("../img/bgtesthigh2.png");
+  background-image: url("../img/ex1.png");
+  height: 390px;
+  max-width: 1270px;
+  width: 100%;
+  min-width: 1210px;
 }
 
 #question2 {
-  background-image: url("../img/bgtesthigh2.png");
+  background-image: url("../img/ex2.png");
+  height: 390px;
+  max-width: 1270px;
+  width: 100%;
+  min-width: 1210px;
 }
 
 #question3 {
-  background-image: url("../img/bgtesthigh2.png");
+  background-image: url("../img/ex3.png");
+  height: 390px;
+  max-width: 1270px;
+  width: 100%;
+  min-width: 1210px;
 }
 
 #question4 {
-  background-image: url("../img/bgtesthigh2.png");
+  background-image: url("../img/ex4.png");
+  height: 390px;
+  max-width: 1270px;
+  width: 100%;
+  min-width: 1210px;
 }
 .container {
-  height: 550px;
+  height: 390px;
   border: 5px solid black;
   padding: 0px;
+  margin:0px;
 }
 
 #quizContainer{
-  width: 90%;
-  height: 550px;
-  margin: 0px;
+  width: 100%;
+  height: 390px;
   background-color: #000;
+  margin:0px;
 }
 
 #startQuiz {
   background-image: url("../img/bgtesthigh2.png");
+  height: 390px;
+  max-width: 1270px;
+  width: 100%;
+  min-width: 1210px;
 }
 
 .questionBox {
   position: fixed;
-  left: 50%; 
+  left: 55%;
+  top: 5%;
   margin: auto;
-  width: 50%;
-  height: 400px;
+  width: 30%;
+  height: 240px;
   border: 5px solid #FFF;
   border-radius: 10px;
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.8);
   z-index: 50;
+  color: #000;
 }
 
 .steps {
@@ -442,23 +465,26 @@ img::-moz-selection{
 }
 .alternatives {
   width: 100%;
-  height: 100%;
+  height: 100%
+  font-size: 12px;
 }
 
 .unselectedOption {
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 30px;
   float: left;
   border: 5px solid #FFF;
   margin: 0 4%;
+  background-color: #FFF;
 }
 
 .selectedOption{
   border: 5px solid;
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 30px;
   float: left;
   margin: 0 4%;
+  background-color: #FFF;
 }
 
 .quizButton {
@@ -467,17 +493,18 @@ img::-moz-selection{
   padding: 2px 50px;
   background-color: #FFF;
   width: 200px;
-  margin: auto;
+  height: 35px;
   position: absolute;
   bottom: 170px;
+  top:83%;
   left: 43%;
 }
 
 #startButton {
   position: absolute;
   margin-top: 20px;
-  top: 10px;
-  left: 40%;
+  top: 300px;
+  left: 68%;
   height: 50px;
 }
 
@@ -516,7 +543,7 @@ img::-moz-selection{
 
 .question {
   padding: 0px 10px;
-  color: #fff;
+  color: #000;
 
 }
 
