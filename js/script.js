@@ -69,13 +69,13 @@
                     $( ".unselectedOption, .quizButton, .question, .questionBox" ).hide();
 
                     // changes the avatar to a moving gif
-                    $(".avatar").attr("src", "img/TestAvatar.gif")
+                    $(".avatar").attr("src", "img/walk.gif")
                     // Slide in new step, slide out old one
                     $(stepsInQuiz[i-1]).hide("slide", {direction : "left"}, 2000);
                     $(stepsInQuiz[i]).show("slide", {direction : "right"}, 2000);
                     
                     setTimeout(function(){
-                        $(".avatar").attr("src", "img/TestAvatarStill.gif")
+                        $(".avatar").attr("src", "img/still.png")
                     },2000);
                     // Show options
                     setTimeout(function(){
