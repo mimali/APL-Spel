@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+ <html lang="en">
+ 
+ <head>
+ 
+     <meta charset="utf-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <meta name="description" content="">
+     <meta name="author" content="">
+ 
+ 
+ 
+     <title>APL</title>
+ 
+     <!-- Bootstrap Core CSS -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+ 
+     <!-- Theme CSS -->
+     <link href="css/clean-blog.min kopia.css" rel="stylesheet">
+ 
+     <!-- Custom Fonts -->
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+     <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+     <link href='https://fonts.googleapis.com/css?family=Orbitron:700' rel='stylesheet' type='text/css'>
+ 
+     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+     <!--[if lt IE 9]>
+         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+     <![endif]-->
+ 
+ </head>
+ 
+ <body>
+ 
+     <!-- Page Header -->
+     <!-- Set your background image for this header on the line below. -->
+     <!-- <header class="intro-header" style="background-image: url('img/home-bg.jpg')">
+         <div class="container">
+             <div class="row">
+                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                     <div class="site-heading">
+                         <h1>APL</h1>
+                         <hr class="small">
+                         <span class="subheading">Tänker du på miljön?</span>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </header>-->
+ 
+ 
+     <!-- Main Content -->
+     <div class="container">
+ 
+       <div id="quizContainer">
+         <img src="img/TestAvatarStill.gif" class="avatar">
+         <div id="startQuiz" class="steps">
+           <button class="quizButton" id="startButton">SPELA</button>
+         </div> <!-- startQuiz -->
+ 
+         <div id="question1" class="steps">
+ 
+           <div class="questionBox">
+             <p class="question">Här kommer det att finnas en fråga. Vänligen välj ett
+             svarsalternativ nedan:</p>
+             <div id="option1.1" class="unselectedOption"><p class="alternatives">Alt 1</p></div>
+             <div id="option1.2" class="unselectedOption"><p class="alternatives">Alt 2</p></div>
+             <div id="option1.3" class="unselectedOption"><p class="alternatives">Alt 3</p></div>
+             <div id="option1.4" class="unselectedOption"><p class="alternatives">Alt 4</p></div>
+             <button class="quizButton">SVARA</button>
+             <div id="correctFeedback1" class="correctFeedback"></div>
+             <div id="incorrectFeedback1" class="incorrectFeedback"></div>
+           </div>
+ 
+         </div> <!-- question1 -->
+ 
+         <div id="question2" class="steps">
+           <div class="questionBox">
+             <p class="question">Här kommer det att finnas en fråga. Vänligen välj ett
+             svarsalternativ nedan:</p>
+             <div id="option2.1" class="unselectedOption"><p class="alternatives">Alt 1</p></div>
+             <div id="option2.2" class="unselectedOption"><p class="alternatives">Alt 2</p></div>
+             <div id="option2.3" class="unselectedOption"><p class="alternatives">Alt 3</p></div>
+             <div id="option2.4" class="unselectedOption"><p class="alternatives">Alt 4</p></div>
+             <button class="quizButton">SVARA</button>
+             <div id="correctFeedback2" class="correctFeedback"></div>
+             <div id="incorrectFeedback2" class="incorrectFeedback"></div>
+           </div>
+         </div> <!-- question2 -->
+ 
+         <div id="question3" class="steps">
+           <div class="questionBox">
+             <p class="question">Här kommer det att finnas en fråga. Vänligen välj ett
+             svarsalternativ nedan:</p>
+             <div id="option3.1" class="unselectedOption"><p class="alternatives">Alt 1</p></div>
+             <div id="option3.2" class="unselectedOption"><p class="alternatives">Alt 2</p></div>
+             <div id="option3.3" class="unselectedOption"><p class="alternatives">Alt 3</p></div>
+             <div id="option3.4" class="unselectedOption"><p class="alternatives">Alt 4</p></div>
+             <button class="quizButton">SVARA</button>
+             <div id="correctFeedback3" class="correctFeedback"></div>
+             <div id="incorrectFeedback3" class="incorrectFeedback"></div>
+           </div>
+         </div> <!-- question3 -->
+ 
+         <div id="question4" class="steps">
+           <div class="questionBox">
+             <p class="question">Här kommer det att finnas en fråga. Vänligen välj ett
+             svarsalternativ nedan:</p>
+             <div id="option4.1" class="unselectedOption"><p class="alternatives">Alt 1</p></div>
+             <div id="option4.2" class="unselectedOption"><p class="alternatives">Alt 2</p></div>
+             <div id="option4.3" class="unselectedOption"><p class="alternatives">Alt 3</p></div>
+             <div id="option4.4" class="unselectedOption"><p class="alternatives">Alt 4</p></div>
+             <button class="quizButton">SVARA</button>
+             <div id="correctFeedback4" class="correctFeedback"></div>
+             <div id="incorrectFeedback4" class="incorrectFeedback"></div>
+           </div>
+         </div> <!-- question4 -->
+ 
+         <div id="endQuiz" class="steps">
+           <button class="quizButton">Avsluta</button>
+         </div> <!-- endQuiz -->
+       </div> <!-- quizContainer -->
+     </div>
+ 
+     <!-- jQuery -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+ 
+     <!-- Latest compiled and minified JavaScript -->
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+ 
+     <!-- Contact Form JavaScript -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqBootstrapValidation/1.3.7/jqBootstrapValidation.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-contact-form/1.3/js/contact-form.min.js"></script>
+ 
+     <!-- Theme JavaScript -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/startbootstrap-clean-blog/3.3.7/js/clean-blog.min.js"></script>
+     <script src="js/feedbackDict.js"></script>
+     <script src="js/script.js"></script>
+     <!-- <script src="js/events.js"></script>
+     <script src="js/functions.js"></script> -->
+ 
+ </body>
+ 
+ </html>
