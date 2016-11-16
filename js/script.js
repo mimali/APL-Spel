@@ -66,7 +66,7 @@
                 // Check what step the quiz is on, show that step and hide previous
                 else if (i == currentStep && currentStep > 0) {
                     // Hide options
-                    $( ".unselectedOption, .quizButton, .question, .questionBox" ).hide();
+                    $( ".unselectedOption, .selectedOption, .quizButton, .question, .questionBox" ).hide();
 
                     // changes the avatar to a moving gif
                     $(".avatar").attr("src", "img/TestAvatar.gif")
@@ -93,10 +93,8 @@
                 if (allUserAnswers[i] == correctAnswers[i]) {
                     boolCorrectAnswers.push(true);
                 } else {
-                    boolCorrectAnswers.push(false);
+                    console.log(false)
                 };
             };
-            console.log(boolCorrectAnswers) //TESTPRINT
         };
-        
-    });
+});
