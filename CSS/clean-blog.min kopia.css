@@ -374,10 +374,9 @@ img::-moz-selection{
 .avatar {
   position: absolute;
   left: 200px;
-  bottom: 100px;
+  bottom: 250px;
   z-index: 2;
   height: 100px;
-  width: 100px;
 }
 
 /*#houseparty {
@@ -581,6 +580,7 @@ h3{
   font-family: font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
   position: absolute;
 }
+
 
 .correctFeedback {
   background-color: #15ff00;
