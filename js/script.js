@@ -47,7 +47,7 @@ $(document).ready(function () {
 
         $(this).hide();
         checkAnswer();
-
+        $(".nextButton").show("fade", 1500);
           
     });
 
@@ -88,7 +88,7 @@ $(document).ready(function () {
             // Check what step the quiz is on, show that step and hide previous
             else if (i == currentStep && currentStep > 0) {
                 // Hide options
-                $( ".unselectedOption, .selectedOption, .quizButton, .question, .questionBox, .correctFeedback, .incorrectFeedback" ).hide();
+                $( ".unselectedOption, .selectedOption, .quizButton, .question, .questionBox, .correctFeedback, .incorrectFeedback, .nextButton" ).hide();
 
                 // changes the avatar to a moving gif
                 $(".avatar").attr("src", "img/TestAvatar.gif");
