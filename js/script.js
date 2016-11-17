@@ -29,21 +29,29 @@ $(document).ready(function () {
     getValidStep();
 
     // When clicking button...
-    $(".quizButton").click(function(){
+    $(".nextButton").click(function(){
         // Add +1 step in process
         currentStep++;
         // If quiz is over -> compare user answers with correct answers
         if (currentStep > 4) {
-            compareAnswersEnd();
+            compareAnswersEnd()
         };
-
-        //Check answer
-        checkAnswer();
 
         // Hide all previous step, show next
         getValidStep();
           
     });
+
+    // When clicking button...
+    $(".quizButton").click(function(){
+
+        $(this).hide();
+        checkAnswer();
+
+          
+    });
+
+
 
     $(".unselectedOption").click(function(){
         //Change class to mark chosen option here
@@ -80,10 +88,10 @@ $(document).ready(function () {
             // Check what step the quiz is on, show that step and hide previous
             else if (i == currentStep && currentStep > 0) {
                 // Hide options
-                $( ".unselectedOption, .selectedOption, .quizButton, .question, .questionBox" ).hide();
+                $( ".unselectedOption, .selectedOption, .quizButton, .question, .questionBox, .correctFeedback, .incorrectFeedback" ).hide();
 
                 // changes the avatar to a moving gif
-                $(".avatar").attr("src", "img/TestAvatar.gif")
+                $(".avatar").attr("src", "img/TestAvatar.gif");
                 // Slide in new step, slide out old one
                 $(stepsInQuiz[i-1]).hide("slide", {direction : "left"}, 2000);
                 $(stepsInQuiz[i]).show("slide", {direction : "right"}, 2000);
@@ -117,9 +125,11 @@ $(document).ready(function () {
 
         if (allUserAnswers.length > 0 && allUserAnswers.length < 5) {
             // Save feedback in var result
-            var result = getFeedback(currentStep - 2, allUserAnswers[currentStep - 2]);
+            var result = getFeedback(currentStep, allUserAnswers[currentStep - 1]);
+            console.log(result);
             // Get id of relevant html feedback
-            var feedbackBlock = $("#" + result[3] + (currentStep - 1).toString());
+            var feedbackBlock = $("#" + result[3] + (currentStep).toString());
+            console.log(feedbackBlock);
             // Insert feedback from getFeedback() in game
             $(feedbackBlock).append("<h1>"+result[0]+"</h2>", "<p>"+result[1]+"</p>");
             
@@ -131,4 +141,6 @@ $(document).ready(function () {
         };
 
     };
+
+
 });
