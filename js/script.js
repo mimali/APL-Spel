@@ -114,6 +114,8 @@ $(document).ready(function () {
                 // Show options
                 setTimeout(function(){
                     $(".unselectedOption, .quizButton, .question, .questionBox").show("fade", 300);
+                    $(".unselectedOption, .question").show("fade", 300);
+                    $('.unselectedOption').next('label').show("fade", 300);
                 }, 2300);
             };
 
