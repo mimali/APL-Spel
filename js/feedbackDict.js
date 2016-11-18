@@ -10,10 +10,10 @@ function getFeedback(currentStep, chosenAnswerString) {
 		// Info about question here
 		// e.g what is correct answer, what to show
 		{
-	    "option1.1" : ["Helt rätt!", "Korrekt! Detta var rätt svar", "#", "correctFeedback"], //Specific info about option here
-	    "option1.2" : ["Fel fel fel!", "Fasiken, nu blev det fel", "#", "incorrectFeedback"],
-	    "option1.3" : ["Fel fel fel!", "Fasiken, nu blev det fel", "#", "incorrectFeedback"],
-	    "option1.4" : ["Fel fel fel!", "Fasiken, nu blev det fel", "#", "incorrectFeedback"],
+	    "option1.1" : ["Nej!", "Medicinen blir fiskmat men inte bra sådan. [Mer info/bild om miljöfaror och hot]", "#", "incorrectFeedback"], //Specific info about option here
+	    "option1.2" : ["Nej!", "Medicinen ska inte ner i toan eller vasken. [Mer info/bild om miljöfaror och hot]", "#", "incorrectFeedback"],
+	    "option1.3" : ["Nej!", "Medicinen ska inte ner i toan eller vasken. [Mer info/bild om miljöfaror och hot]", "#", "incorrectFeedback"],
+	    "option1.4" : ["Helt rätt!", "[Positiv feedback]", "#", "correctFeedback"],
 	    },
 	   	{
 	    "option2.1" : ["Helt rätt!", "Korrekt! Detta var rätt svar", "#", "correctFeedback"],
