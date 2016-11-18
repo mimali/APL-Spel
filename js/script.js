@@ -48,11 +48,15 @@ $(document).ready(function () {
         if (allUserAnswers[currentStep - 1] === undefined) {
             window.alert("Du svarade ju ingenting? Välj ett alternativ, tack.");            
         } else {
-
+            // Hide button
             $(this).hide();
+            // Hide not selected options and question
             $(".unselectedOption, .question").hide()
+            // Hide labels for not selected options and question
             $('.unselectedOption').next('label').hide()
+            // Check if answer was correct
             checkAnswer();
+            // Show next-button
             $(".nextButton").show("fade", 1500);
         }
           
