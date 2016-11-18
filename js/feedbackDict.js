@@ -28,10 +28,10 @@ function getFeedback(currentStep, chosenAnswerString) {
 	    "option3.4" : ["Nej!", "Fasiken, nu blev det fel", "#", "incorrectFeedback"],
 	    },
 	   	{
-	    "option4.1" : ["Helt rätt!", "Korrekt! Detta var rätt svar", "#", "correctFeedback"],
-	    "option4.2" : ["Nej!", "Fasiken, nu blev det fel", "#", "incorrectFeedback"],
-	    "option4.3" : ["Nej!", "Fasiken, nu blev det fel", "#", "incorrectFeedback"],
-	    "option4.4" : ["Nej!", "Fasiken, nu blev det fel", "#", "incorrectFeedback"],
+	    "option4.1" : ["Helt rätt!", "Du är en riktig miljövän! Man ska alltid lämna medicin till ett apotek så att de kan förvara den och se till att den återvinns på rätt sätt.", "#", "correctFeedback"],
+	    "option4.2" : ["Nej!", "Det är aldrig bra att gömma medicin, den kan komma i orätta händer och ska därför alltid överlämnas i en genomskinlig påse till personalen på apoteket.", "#", "incorrectFeedback"],
+	    "option4.3" : ["Nej!", "Kurragömma är alltid roligt, men eftersom apotekspersonalen inte vet att du gömmer dig så kommer de inte att leta efter dig heller. Lämna din medicin i en genomskinlig påse till personalen.", "#", "incorrectFeedback"],
+	    "option4.4" : ["Nej!", "Eftersom apoteken inte är postkontor så har de inga kuvert. Det finns genomskinliga påsar som du skall lägga din överblivna medicin i och lämna till personalen.", "#", "incorrectFeedback"],
 	    },
 
 	]; 
