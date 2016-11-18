@@ -1,6 +1,6 @@
 // feedbackArray = array[
 // 		{dict of question options 
-//			key : list of feedback info [ rubrik[0], text[1], imgsource[2] ]
+//			key : list of feedback info [ rubrik[0], text[1], imgsource[2], class[3] ]
 //		}
 //	]
 
