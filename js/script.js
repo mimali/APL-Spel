@@ -20,7 +20,7 @@ $(document).ready(function () {
     // All user answers in array form
     var allUserAnswers = [];
     //All correct answers for comparison to user's answers
-    var correctAnswers = ["option1.1", "option2.1", "option3.1", "option4.1"];
+    var correctAnswers = ["option1.4", "option2.4", "option3.2", "option4.1"];
     // And then in booleans
     var boolCorrectAnswers = [];
 
