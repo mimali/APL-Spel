@@ -46,10 +46,12 @@ $(document).ready(function () {
     $(".quizButton").click(function(){
 
         if (allUserAnswers[currentStep - 1] === undefined) {
-            window.alert("Du måste välja ett alternativ!!!");            
+            window.alert("Du svarade ju ingenting? Välj ett alternativ, tack.");            
         } else {
 
             $(this).hide();
+            $(".unselectedOption, .question").hide()
+            $('.unselectedOption').next('label').hide()
             checkAnswer();
             $(".nextButton").show("fade", 1500);
         }
