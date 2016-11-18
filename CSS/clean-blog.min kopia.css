@@ -407,6 +407,16 @@ img::-moz-selection{
   width: 100%;
   min-width: 1210px;
 }
+
+#endQuiz {
+  background-image: url("../img/ex5.png");
+  height: 390px;
+  max-width: 1270px;
+  width: 100%;
+  min-width: 1210px;
+}
+
+
 .container {
   height: 390px;
   border: 5px solid black;
@@ -529,6 +539,7 @@ label{
   bottom: 170px;
   top:87%;
   left: 43%;
+  z-index: 100;
 }
 
 #startButton {
