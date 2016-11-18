@@ -45,9 +45,14 @@ $(document).ready(function () {
     // When clicking button...
     $(".quizButton").click(function(){
 
-        $(this).hide();
-        checkAnswer();
-        $(".nextButton").show("fade", 1500);
+        if (allUserAnswers[currentStep - 1] === undefined) {
+            window.alert("Du måste välja ett alternativ!!!");            
+        } else {
+
+            $(this).hide();
+            checkAnswer();
+            $(".nextButton").show("fade", 1500);
+        }
           
     });
 
