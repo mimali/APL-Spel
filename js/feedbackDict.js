@@ -16,22 +16,22 @@ function getFeedback(currentStep, chosenAnswerString) {
 	    "option1.4" : ["Helt rätt!", "[Positiv feedback]", "#", "correctFeedback"],
 	    },
 	   	{
-	    "option2.1" : ["Helt rätt!", "Korrekt! Detta var rätt svar", "#", "correctFeedback"],
-	    "option2.2" : ["Fel fel fel!", "Fasiken, nu blev det fel", "#", "incorrectFeedback"],
-	    "option2.3" : ["Fel fel fel!", "Fasiken, nu blev det fel", "#", "incorrectFeedback"],
-	    "option2.4" : ["Fel fel fel!", "Fasiken, nu blev det fel", "#", "incorrectFeedback"],
+	    "option2.1" : ["Nej!", "Medicin i molnen bidrar till en försurad och förstörd miljö. Släng inte din medicin i soptunnan!", "#", "incorrectFeedback"],
+	    "option2.2" : ["Nej!", "Nog för att sopgubbarna gillar att sortera sopor, men om de skulle missa att ta reda på någon medicin så får det förödande konsekvenser. Släng inte medicin i soptunnan!", "#", "incorrectFeedback"],
+	    "option2.3" : ["Nej!", "Medicin hör inte hemma i soptunnan även om det vore så att den var väl förpackad. Förbränningen av sopor gör att det i så fall kommer ut farliga ämnen i naturen.", "#", "incorrectFeedback"],
+	    "option2.4" : ["Helt rätt!", "Du verkar ha koll på detta! Man ska aldrig slänga medicin i soporna!", "#", "correctFeedback"],
 	    },
 	   	{
-	    "option3.1" : ["Helt rätt!", "Korrekt! Detta var rätt svar", "#", "correctFeedback"],
-	    "option3.2" : ["Fel fel fel!", "Fasiken, nu blev det fel", "#", "incorrectFeedback"],
-	    "option3.3" : ["Fel fel fel!", "Fasiken, nu blev det fel", "#", "incorrectFeedback"],
-	    "option3.4" : ["Fel fel fel!", "Fasiken, nu blev det fel", "#", "incorrectFeedback"],
+	    "option3.1" : ["Nej!", "Fasiken, nu blev det fel", "#", "incorrectFeedback"],
+	    "option3.2" : ["Helt rätt!", "Korrekt! Detta var rätt svar", "#", "correctFeedback"],
+	    "option3.3" : ["Nej!", "Fasiken, nu blev det fel", "#", "incorrectFeedback"],
+	    "option3.4" : ["Nej!", "Fasiken, nu blev det fel", "#", "incorrectFeedback"],
 	    },
 	   	{
 	    "option4.1" : ["Helt rätt!", "Korrekt! Detta var rätt svar", "#", "correctFeedback"],
-	    "option4.2" : ["Fel fel fel!", "Fasiken, nu blev det fel", "#", "incorrectFeedback"],
-	    "option4.3" : ["Fel fel fel!", "Fasiken, nu blev det fel", "#", "incorrectFeedback"],
-	    "option4.4" : ["Fel fel fel!", "Fasiken, nu blev det fel", "#", "incorrectFeedback"],
+	    "option4.2" : ["Nej!", "Fasiken, nu blev det fel", "#", "incorrectFeedback"],
+	    "option4.3" : ["Nej!", "Fasiken, nu blev det fel", "#", "incorrectFeedback"],
+	    "option4.4" : ["Nej!", "Fasiken, nu blev det fel", "#", "incorrectFeedback"],
 	    },
 
 	]; 
