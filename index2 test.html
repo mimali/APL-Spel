@@ -70,12 +70,10 @@
 
            <div class="questionBox">
              <p class="question">Många människor spolar ner sin överblivna medicin i toaletten. Hur tänker du?</p>
-             <div class="answers">
-                 <p id="option1.1" class="unselectedOption">Spola! Medicinen löses upp och blir mumsig fiskmat.</p>
-                 <p id="option1.2" class="unselectedOption">Salvor och krämer är fritt fram att spola ner. Piller måste krossas innan spolning.</p>
-                 <p id="option1.3" class="unselectedOption">Spola bara om medicinen INTE har passerat sitt bäst-före datum.</p>
-                 <p id="option1.4" class="unselectedOption">Spola inte! Toaletten är för kiss och bajs, aldrig medicin.</p>
-             </div>
+             <input type="radio" name="option" id="option1.1" class="unselectedOption" value="var"/><label for="option1.1">Spola! Medicinen löses upp och blir mumsig fiskmat</label><br>
+             <input type="radio" name="option" id="option1.2" class="unselectedOption" value="var"/><label for="option1.2">Salvor och krämer är fritt fram att spola ner, men piller måste krossas innan spolning </label><br>
+             <input type="radio" name="option" id="option1.3" class="unselectedOption" value="var"/><label for="option1.3">Spola bara om medicinen INTE har passerat sitt bäst-före datum </label><br>
+             <input type="radio" name="option" id="option1.4" class="unselectedOption" value="var"/><label for="option1.4">Spola inte! Toaletten är för kiss och bajs, aldrig medicin </label><br>
              <button class="quizButton">SVARA</button>
              <div id="correctFeedback1" class="correctFeedback"></div>
              <div id="incorrectFeedback1" class="incorrectFeedback"></div>
@@ -85,15 +83,11 @@
 
          <div id="question2" class="steps">
            <div class="questionBox">
-             <p class="question">Soptunnan är ju till för skräp du inte vill ha. Är det här platsen för gammal medicin?  </p>
-             <div id="option2.1" class="unselectedOption"><p class="alternatives">Släng! Medicinen skickas till förbränning för att förvandlas till moln. 
-</p></div>
-             <div id="option2.2" class="unselectedOption"><p class="alternatives">Det är okej att slänga men se till att medicinen ligger i sin originalförpackning så att sopgubbarna kan sortera den. 
-</p></div>
-             <div id="option2.3" class="unselectedOption"><p class="alternatives">Det är okej att slänga om du ser till att skydda medicinen så att inga barn eller djur kan komma åt den.
-</p></div>
-             <div id="option2.4" class="unselectedOption"><p class="alternatives">Släng inte! Du får aldrig slänga medicin i soptunnan.
-</p></div>
+             <p class="question">Soptunnan är ju till för skräp du inte vill ha. Är det här platsen för gammal medicin? </p>
+             <input type="radio" name="option" id="option2.1" class="unselectedOption" value="var"/><label for="option2.1">Släng! Medicinen skickas till förbränning för att förvandlas till moln </label><br>
+             <input type="radio" name="option" id="option2.2" class="unselectedOption" value="var"/><label for="option2.2">Det är okej att slänga men se till att medicinen ligger i sin originalförpackning så att sopgubbarna kan sortera den </label><br>
+             <input type="radio" name="option" id="option2.3" class="unselectedOption" value="var"/><label for="option2.3">Det är okej att slänga om du ser till att skydda medicinen så att inga barn eller djur kan komma åt den </label><br>
+             <input type="radio" name="option" id="option2.4" class="unselectedOption" value="var"/><label for="option2.4">Släng inte! Du får aldrig slänga medicin i soptunnan </label><br>
              <button class="quizButton">SVARA</button>
              <div id="correctFeedback2" class="correctFeedback"></div>
              <div id="incorrectFeedback2" class="incorrectFeedback"></div>
@@ -103,16 +97,11 @@
 
          <div id="question3" class="steps">
            <div class="questionBox">
-             <p class="question">På sopstationer slänger man väl allt som inte kan slängas i vanliga sopor. Är detta rätta platsen för din medicin?
-</p>
-             <div id="option3.1" class="unselectedOption"><p class="alternatives">Släng medicinen i containern för farligt avfall.
-</p></div>
-             <div id="option3.2" class="unselectedOption"><p class="alternatives">Sopstationer tar inte emot läkemedel. Du får leta vidare.
-</p></div>
-             <div id="option3.3" class="unselectedOption"><p class="alternatives">Släng medicinerna i brännbart avfall.
-</p></div>
-             <div id="option3.4" class="unselectedOption"><p class="alternatives">Medicin bidrar till att de andra soporna bryts ner snabbare. Strö ut dina mediciner lite överallt på sopstationen.
-</p></div>
+             <p class="question">På sopstationer slänger man väl allt som inte kan slängas i vanliga sopor. Är detta rätta platsen för din medicin?</p>
+             <input type="radio" name="option" id="option3.1" class="unselectedOption" value="var"/><label for="option3.1">Släng medicinen i containern för farligt avfall </label><br>
+             <input type="radio" name="option" id="option3.2" class="unselectedOption" value="var"/><label for="option3.2">Sopstationer tar inte emot läkemedel. Du får leta vidare </label><br>
+             <input type="radio" name="option" id="option3.3" class="unselectedOption" value="var"/><label for="option3.3">Släng medicinerna i brännbart avfall </label><br>
+             <input type="radio" name="option" id="option3.4" class="unselectedOption" value="var"/><label for="option3.4">Medicin bidrar till att de andra soporna bryts ner snabbare. Strö ut dina mediciner lite överallt på sopstationen </label><br>
              <button class="quizButton">SVARA</button>
              <div id="correctFeedback3" class="correctFeedback"></div>
              <div id="incorrectFeedback3" class="incorrectFeedback"></div>
@@ -123,10 +112,10 @@
          <div id="question4" class="steps">
            <div class="questionBox">
              <p class="question">Nu är du framme på apoteket, samma plats som du hämtade ut medicinen från början. Det är här medicinen ska lämnas in när du inte längre vill ha den. Men hur ska den lämnas in?</p>
-             <div id="option4.1" class="unselectedOption"><p class="alternatives">Ta ut medicinen från förpackningen och lämna in i en genomskinlig påse som finns på apoteket</p></div>
-             <div id="option4.2" class="unselectedOption"><p class="alternatives"></p>Göm all medicin bakom hudprodukterna</div>
-             <div id="option4.3" class="unselectedOption"><p class="alternatives"></p>Göm dig själv bakom hudprodukterna</div>
-             <div id="option4.4" class="unselectedOption"><p class="alternatives"></p>Ta ut all medicin och lägg i ett kuvert som finns på apoteket</div>
+             <input type="radio" name="option" id="option4.1" class="unselectedOption" value="var"/><label for="option4.1">Ta ut medicinen från förpackningen och lämna in i en genomskinlig påse som finns på apoteket </label><br>
+             <input type="radio" name="option" id="option4.2" class="unselectedOption" value="var"/><label for="option4.2">Göm all medicin bakom hudprodukterna </label><br>
+             <input type="radio" name="option" id="option4.3" class="unselectedOption" value="var"/><label for="option4.3">Göm dig själv bakom hudprodukterna </label><br>
+             <input type="radio" name="option" id="option4.4" class="unselectedOption" value="var"/><label for="option4.4">Ta ut all medicin och lägg i ett kuvert som finns på apoteket </label><br>
              <button class="quizButton">SVARA</button>
              <div id="correctFeedback4" class="correctFeedback"></div>
              <div id="incorrectFeedback4" class="incorrectFeedback"></div>
