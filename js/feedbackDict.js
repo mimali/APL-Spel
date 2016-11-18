@@ -13,7 +13,7 @@ function getFeedback(currentStep, chosenAnswerString) {
 	    "option1.1" : ["Nej!", "Medicinen blir fiskmat men inte bra sådan. [Mer info/bild om miljöfaror och hot]", "#", "incorrectFeedback"], //Specific info about option here
 	    "option1.2" : ["Nej!", "Medicinen ska inte ner i toan eller vasken. [Mer info/bild om miljöfaror och hot]", "#", "incorrectFeedback"],
 	    "option1.3" : ["Nej!", "Medicinen ska inte ner i toan eller vasken. [Mer info/bild om miljöfaror och hot]", "#", "incorrectFeedback"],
-	    "option1.4" : ["Helt rätt!", "[Positiv feedback]", "#", "correctFeedback"],
+	    "option1.4" : ["Helt rätt!", "Duktig du är! ", "#", "correctFeedback"],
 	    },
 	   	{
 	    "option2.1" : ["Nej!", "Medicin i molnen bidrar till en försurad och förstörd miljö. Släng inte din medicin i soptunnan!", "#", "incorrectFeedback"],
@@ -22,10 +22,10 @@ function getFeedback(currentStep, chosenAnswerString) {
 	    "option2.4" : ["Helt rätt!", "Du verkar ha koll på detta! Man ska aldrig slänga medicin i soporna!", "#", "correctFeedback"],
 	    },
 	   	{
-	    "option3.1" : ["Nej!", "Fasiken, nu blev det fel", "#", "incorrectFeedback"],
-	    "option3.2" : ["Helt rätt!", "Korrekt! Detta var rätt svar", "#", "correctFeedback"],
-	    "option3.3" : ["Nej!", "Fasiken, nu blev det fel", "#", "incorrectFeedback"],
-	    "option3.4" : ["Nej!", "Fasiken, nu blev det fel", "#", "incorrectFeedback"],
+	    "option3.1" : ["Nej!", "Det är helt rätt att medicin kan vara farligt för miljön. Men de flesta läkemedel hör tyvärr inte hemma i farligt avfall.", "#", "incorrectFeedback"],
+	    "option3.2" : ["Helt rätt!", "Fortsätt försök, snart är du nog rätt på det!", "#", "correctFeedback"],
+	    "option3.3" : ["Nej!", "När medcinen bränns kommer alla substanser ut i luften. Detta är inte bra!", "#", "incorrectFeedback"],
+	    "option3.4" : ["Nej!", "Hur tänkte du nu egentligen?", "#", "incorrectFeedback"],
 	    },
 	   	{
 	    "option4.1" : ["Helt rätt!", "Korrekt! Detta var rätt svar", "#", "correctFeedback"],
